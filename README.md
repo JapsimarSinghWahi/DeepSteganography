@@ -3,7 +3,7 @@ Ever sent a hidden message in invisible ink to your friends? Are you intrigued b
 
 
 ## Architectuure
-[![Alt text](https://github.com/JapsimarSinghWahi/DeepSteganography/blob/master/model.png)](https://www.youtube.com/watch?v=-lsr638W6KU&feature=youtu.be)  
+[![Alt text](https://github.com/JapsimarSinghWahi/DeepSteganography/blob/master/Images/model.png)](https://www.youtube.com/watch?v=-lsr638W6KU&feature=youtu.be)`  
 Figure 1. The image shows the DeepSteg architecture with multiple CNN based sub-networks. Inside the encoder, the prep networks convert the input secret images into images that can be concatenated to the cover. The concatenation is then passed through the hiding network to generate the encode cover. In the decoder network, separate reveal networks are deployed to generate the decoded secrets out of the encoded cover.
 
 
