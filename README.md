@@ -1,6 +1,14 @@
 # DeepSteganography
 Ever sent a hidden message in invisible ink to your friends? Are you intrigued by the idea of cryptic message exchange? How about using images for this exchange? Steganography is what you need! It is one of the techniques of encryption and over the years, steganography has been used to encode a lower resolution image into a higher resolution image. But steganography using naive methods, like LSB manipulation, is susceptible to statistical analysis. Our model extends existing deep learning research for encoding multiple secret images onto a single cover by leveraging convolutional neural networks based deep learning architectures. DeepSteg allows senders to embed up to three secret images onto a single cover using an encoder network and then have multiple decoder networks to obtain the embedded secrets.
 
+
+
+
+### Read our paper on [arXiv](https://arxiv.org/pdf/2101.00350.pdf)
+
+
+
+
 ## Idea
 We aim to perform multi-image steganography, hiding three or more images in a single cover image. The embedded secret images must be retrievable with minimum loss. The encoded cover image must look like the original cover image. To perform this, we combine the idea of Baluja [1] and Kreuk et. al [3]. We take the network implementation idea of having a prep and hiding network as an encoder and a reveal network as a decoder from Baluja [1]. To extend this for multiple images, we pass multiple secret images via the
 prep network and then concatenating these resulting data with the carrier image and then finally send this via the Hiding network. We then take the idea of having multiple decoders, one per secret image, from Kreuk et al to retrieve all the secret images from the container image.
